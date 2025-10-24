@@ -1,4 +1,14 @@
 {
+    "$schema": "https://raw.githubusercontent.com/vercel/vercel/main/packages/now-builder/src/builders/schema.json",
+    "builds": [
+        {
+            "src": "package.json",
+            "use": "@vercel/static-build",
+            "config": {
+                "distDir": "dist/public"
+            }
+        }
+    ],
     "rewrites": [
         {
             "source": "/(.*)",
